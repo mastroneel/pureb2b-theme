@@ -1,0 +1,56 @@
+/* general styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  padding-top: 200px;
+}
+
+/* main navigation styles */
+
+#menu-navbar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+#menu-navbar li {
+  /* position: relative; */
+  display: inline-flex;
+  margin: 0 10px;
+}
+
+/* #menu-navbar li a {
+  display: block;
+} */
+
+#menu-navbar ul {
+  position: absolute;
+  top: -9999999px;
+  left: 0;
+  opacity: 0;
+  background: #ccc;
+}
+
+#menu-navbar li:hover > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 1;
+}
+
+#menu-navbar .sub-menu {
+  width: 90vw;
+}
