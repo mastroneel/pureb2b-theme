@@ -13,6 +13,15 @@ function pureb2b_theme_setup() {
 
   register_nav_menu('homelogomenu', 'Home Logo Menu');
   register_nav_menu('navbar', 'Primary Navbar Navigation');
+  register_nav_menu('footerlogomenu', 'Footer Logo Menu');
+  register_nav_menu('gettoknowmenu', 'Get to Know Us Menu');
+  register_nav_menu('topoffunnelmenu', 'Top of Funnel Menu');
+  register_nav_menu('bottomoffunnelmenu', 'Bottom of Funnel Menu');
+  register_nav_menu('leadresearchmenu', 'Lead Research Menu');
+  register_nav_menu('socialmenu', 'Social Menu');
+  register_nav_menu('footerbottommenu', 'Bottom of Footer Menu');
+
+
 }
 
 add_action('init', 'pureb2b_theme_setup');
