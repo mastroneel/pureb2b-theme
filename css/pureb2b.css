@@ -162,7 +162,13 @@ a {
   height: 0;
   border: 4px solid #ffa800;
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 0px auto;
+}
+
+@media (max-width: 400px) {
+  .orange-underline {
+    width: 250px;
+  }
 }
 
 .white-underline {
@@ -171,6 +177,13 @@ a {
   border: 4px solid #fff;
   border-radius: 10px;
   margin: 20px auto;
+}
+
+.thin-gray-underline {
+  width: 80%;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 80px auto 40px auto;
 }
 
 /* main navigation styles */
@@ -183,6 +196,7 @@ a {
   background: #008fff;
   height: 100px;
   line-height: 100px;
+  z-index: 100;
 }
 .menu-home-logo-menu-container {
   position: absolute;
@@ -256,6 +270,17 @@ a {
 
 
 /* homepage styles */
+
+
+.home h2.blue {
+  font-size: 30px;
+  font-family: 'Gotham Light';
+  margin-top: 40px;
+}
+
+
+/* hero carousel */
+
 .hero {
   min-height: 150vh;
   color: #fff;
@@ -264,6 +289,12 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 110px 40px 0 40px;
+  }
 }
 
 .hero h2 {
@@ -294,13 +325,33 @@ a {
   margin-top: 40px;
 }
 
+
+
+
+/* info rows */
+
 .home .info-row {
   margin-top: 100px;
 }
 
+
 .home .info-row img {
-  width: 90%;
-  margin: -40px auto 0 auto;
+  width: 100%;
+  display: block;
+  max-width: 700px;
+  margin: 10px auto 0 auto;
+}
+
+@media (max-width: 1250px) {
+  .home .info-row img {
+    margin: 60px auto 0 auto;
+  }
+}
+
+@media (max-width: 1030px) {
+  .home .info-row img {
+    margin:100px auto 0 auto;
+  }
 }
 
 .home .info-row h3 {
@@ -324,6 +375,40 @@ a {
 .home .info-row p:nth-of-type(1) {
   margin-top: -10px;
 }
+
+.home .desktop-info-rows{
+  display: none;
+}
+
+.home .info-row-mobile {
+  display: none
+}
+
+@media (min-width: 993px) {
+  .home .desktop-info-rows{
+    display: block !important;
+    margin-top: -460px;
+  }
+  .home .info-row-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .home .row.info-row.info-row-1,
+  .home .row.info-row.info-row-2 {
+    display: none !important;
+    /* margin-top: -460px !important; */
+  }
+  .home .info-row-mobile {
+    display: block !important;
+    margin-top: -350px;
+  }
+}
+
+
+
+/* funnel section */
 
 .funnel-section {
   min-height: 120vh;
@@ -372,10 +457,144 @@ a {
   font-size: 26px;
 }
 
-.home .info-row .map {
+@media (max-width: 1260px) {
+  .funnel-section .white-box-row {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1083px) {
+  .funnel-section .white-box-row {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .funnel-section {
+    padding-bottom: 200px;
+  }
+  .funnel-section .white-box-no-shadow {
+    min-height: 290px;
+    margin: 40px auto 0 auto;
+    padding: 40px 0;
+    max-width: 400px;
+  }
+}
+
+/* audiences section */
+
+.home .map {
   display: block;
   width: 80%;
   margin: 60px auto 100px auto !important;
   min-width: 290px;
   max-width: 1150px;
+}
+
+
+/* icons section */
+
+.home .icons-row img {
+  width: 120px;
+}
+
+
+/* team section */
+
+@media (min-width: 1100px) {
+  .team-card-row {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 1335px) {
+  .team-card-row {
+    padding: 0 170px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .team-card-row {
+    padding: 0 270px;
+  }
+}
+
+@media (min-width: 1750px) {
+  .team-card-row {
+    padding: 0 370px;
+  }
+}
+
+@media (min-width: 1950px) {
+  .team-card-row {
+    padding: 0 470px;
+  }
+}
+
+@media (min-width: 2250px) {
+  .team-card-row {
+    padding: 0 570px;
+  }
+}
+
+.team-card {
+  width: 100%;
+  height: 300px;
+  max-width: 236px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
+.team-card-text {
+  padding-top: 175px;
+}
+
+.team-card-1 {
+  background-image: url('../images/homepage/team-1.png');
+}
+
+.team-card-2 {
+  background-image: url('../images/homepage/team-2.png');
+}
+
+.team-card-3 {
+  background-image: url('../images/homepage/team-3.png');
+}
+
+.team-card-4 {
+  background-image: url('../images/homepage/team-4.png');
+}
+
+
+/* clients section */
+
+.clients-row {
+  line-height: 90px;
+  margin-top: 40px;
+}
+
+.clients-row img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .clients-row img {
+    margin: 15px auto;
+  }
+}
+
+@media (min-width: 993px) {
+  .clients-row .image-container-1,
+  .clients-row .image-container-3,
+  .clients-row .image-container-5  {
+    margin-top: 20px;
+  }
+  .clients-row .image-container-4 {
+    margin-top: 30px;
+  }
 }
