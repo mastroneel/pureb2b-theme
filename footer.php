@@ -1,7 +1,7 @@
 
 
   <footer>
-    <div class="row">
+    <div class="row footer-row">
       <div class="col-xs-12 col-md-2">
         <?php wp_nav_menu(array('theme_location' => 'footerlogomenu')); ?>
       </div>
@@ -21,7 +21,7 @@
       </div>
       <div class="col-xs-12 col-md-2">
         <p>Contact Us</p>
-        <p>
+        <p class="address">
           17 Main Street
           <br>
           Topsfield, MA 01983
@@ -33,6 +33,8 @@
       </div>
       <div class="col-xs-12 col-md-2">
         <p>Subscribe to PureB2B via Email</p>
+        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Newsletter Widget") ) : ?>
+        <?php endif;?>
         <?php wp_nav_menu(array('theme_location' => 'socialmenu')); ?>
       </div>
     </div>

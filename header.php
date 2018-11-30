@@ -22,3 +22,24 @@
       <?php wp_nav_menu(array('theme_location' => 'homelogomenu')); ?>
       <?php wp_nav_menu(array('theme_location' => 'navbar')); ?>
     </div>
+
+    <div class="lead-solutions-menus-container hidden">
+      <div class="arrow-up"></div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 lg-border">
+          <h3 class="blue">Lead Generation Solutions</h3>
+          <h4 class="gray">Delivering full-funnel, scalable solutions for sales and marketing teams.</h4>
+          <p class="gray">Customized campaigns optimized to target your in-market buyers at any state of the buying cycle, PureB2B’s hands-on approach and buyer-intent data provide you with the sales and marketing pipeline velocity you need.</p>
+          <?php wp_nav_menu(array('theme_location' => 'leadlearnmore')); ?>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <?php wp_nav_menu(array('theme_location' => 'leadtopoffunnel')); ?>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <?php wp_nav_menu(array('theme_location' => 'leadbottomoffunnel')); ?>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <?php wp_nav_menu(array('theme_location' => 'leadresearchlead')); ?>
+        </div>
+      </div>
+    </div>
