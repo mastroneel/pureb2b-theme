@@ -10379,10 +10379,28 @@ $("#menu-item-24").hover(function() {
   $(".lead-solutions-menus-container").css('position', 'fixed');
   $(".lead-solutions-menus-container").css('opacity', '1');
   $(".lead-solutions-menus-container").css('top', '0');
+  $(".get-to-know-us-menus-container").css('position', 'absolute');
+  $(".get-to-know-us-menus-container").css('opacity', '0');
+  $(".get-to-know-us-menus-container").css('top', '-9999999px');
 });
 
 $(".lead-solutions-menus-container").mouseleave(function() {
   $(".lead-solutions-menus-container").css('position', 'absolute');
   $(".lead-solutions-menus-container").css('opacity', '0');
   $(".lead-solutions-menus-container").css('top', '-9999999px');
+});
+
+$("#menu-item-26").hover(function() {
+  $(".get-to-know-us-menus-container").css('position', 'fixed');
+  $(".get-to-know-us-menus-container").css('opacity', '1');
+  $(".get-to-know-us-menus-container").css('top', '0');
+  $(".lead-solutions-menus-container").css('position', 'absolute');
+  $(".lead-solutions-menus-container").css('opacity', '0');
+  $(".lead-solutions-menus-container").css('top', '-9999999px');
+});
+
+$(".get-to-know-us-menus-container").mouseleave(function() {
+  $(".get-to-know-us-menus-container").css('position', 'absolute');
+  $(".get-to-know-us-menus-container").css('opacity', '0');
+  $(".get-to-know-us-menus-container").css('top', '-9999999px');
 });
