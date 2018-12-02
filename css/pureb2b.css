@@ -592,6 +592,39 @@ a {
 
 
 
+/* mobile navigation */
+
+.menu-mobile-navigation-container {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .lead-solutions-menus-container,
+  .get-to-know-us-menus-container {
+    display: none;
+  }
+  .main-navbar-menus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent !important;
+  }
+}
+
+#responsive-menu-button {
+  position: absolute !important;
+  top: 40px !important;
+  right: 20px !important;
+  z-index: 10000 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+#responsive-menu-container {
+  padding-top: 50px !important;
+}
+
+
 /* homepage styles */
 
 
@@ -705,6 +738,10 @@ a {
 
 .home .info-row-mobile {
   display: none
+}
+
+.info-row-mobile .white-box.white-box-no-margins{
+  margin-top: 400px;
 }
 
 @media (min-width: 993px) {

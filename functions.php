@@ -13,6 +13,7 @@ function pureb2b_theme_setup() {
 
   register_nav_menu('homelogomenu', 'Home Logo Menu');
   register_nav_menu('navbar', 'Primary Navbar Navigation');
+  register_nav_menu('mobilenavbar', 'Primary Mobile Navigation');
   register_nav_menu('gettoknowuslearnmore', 'Get to Know Us Learn More Menu');
   register_nav_menu('imagesmenu', 'Meet the Team Images Menu');
   register_nav_menu('joinusmenu', 'Join Us Menu');
