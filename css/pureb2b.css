@@ -594,6 +594,23 @@ a {
 
 /* mobile navigation */
 
+.menu-mobile-home-logo-menu-container {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .menu-mobile-home-logo-menu-container {
+    display: block;
+  }
+  .menu-home-logo-menu-container {
+    display: none;
+  }
+  #menu-mobile-home-logo-menu li a img {
+    height: 65px;
+    margin-top: 20px;
+  }
+}
+
 .menu-mobile-navigation-container {
   display: none;
 }
@@ -613,11 +630,21 @@ a {
 
 #responsive-menu-button {
   position: absolute !important;
-  top: 40px !important;
-  right: 20px !important;
+  top: 42px !important;
+  right: 50px !important;
   z-index: 10000 !important;
   background: transparent !important;
   border: none !important;
+}
+
+@media (max-width: 400px) {
+  #responsive-menu-button {
+    right: 15px !important;
+  }
+  #menu-mobile-home-logo-menu li a img {
+    position: absolute;
+    left: 10px;
+  }
 }
 
 #responsive-menu-container {
@@ -1700,8 +1727,6 @@ footer p.address {
 
 /* mobile icons carousel */
 
-
-
 .icons-carousel {
   display: none;
 }
@@ -1731,7 +1756,7 @@ main {
   padding: 0;
 }
 
-#carousel {
+#iconsCarousel {
   position: relative;
   height: 200px;
   width: 100%;
@@ -1740,70 +1765,70 @@ main {
   overflow: hidden;
   text-align: center;
 }
-#carousel div {
+#iconsCarousel div {
   position: absolute;
   transition: transform 1s, left 1s, opacity 1s, z-index 0s;
   opacity: 1;
 }
-#carousel div img {
+#iconsCarousel div img {
   width: 100px;
   transition: width 1s;
 }
-#carousel div.hideLeft {
+#iconsCarousel div.hideLeft {
   left: 0%;
   opacity: 0;
   transform: translateY(50%) translateX(-50%);
 }
-#carousel div.hideLeft img {
+#iconsCarousel div.hideLeft img {
   width: 50px;
 }
-#carousel div.hideRight {
+#iconsCarousel div.hideRight {
   left: 100%;
   opacity: 0;
   transform: translateY(50%) translateX(-50%);
 }
-#carousel div.hideRight img {
+#iconsCarousel div.hideRight img {
   width: 50px;
 }
-#carousel div.prev {
+#iconsCarousel div.prev {
   z-index: 5;
   left: 15%;
   transform: translateY(50px) translateX(-50%);
   opacity: 0.7;
 }
-#carousel div.prev img {
+#iconsCarousel div.prev img {
   width: 100px;
 }
-#carousel div.prevLeftSecond {
+#iconsCarousel div.prevLeftSecond {
   z-index: 4;
   left: 0%;
   transform: translateY(50%) translateX(-50%);
   opacity: 0;
 }
-#carousel div.prevLeftSecond img {
+#iconsCarousel div.prevLeftSecond img {
   width: 50px;
 }
-#carousel div.selected {
+#iconsCarousel div.selected {
   z-index: 10;
   left: 50%;
   transform: translateY(0px) translateX(-50%);
 }
-#carousel div.next {
+#iconsCarousel div.next {
   z-index: 5;
   left: 85%;
   transform: translateY(50px) translateX(-50%);
   opacity: 0.7;
 }
-#carousel div.next img {
+#iconsCarousel div.next img {
   width: 100px;
 }
-#carousel div.nextRightSecond {
+#iconsCarousel div.nextRightSecond {
   z-index: 4;
   left: 100%;
   transform: translateY(50%) translateX(-50%);
   opacity: 0;
 }
-#carousel div.nextRightSecond img {
+#iconsCarousel div.nextRightSecond img {
   width: 50px;
 }
 
@@ -1812,4 +1837,179 @@ main {
   left: 50%;
   transform: translateX(-50%);
   bottom: 10px;
+}
+
+#icon-carousel-nav-dots {
+  display: block;
+  width: 160px;
+  margin: -80px auto 100px auto;
+  padding: 0;
+}
+
+#icon-carousel-nav-dots li {
+  display: inline-flex;
+  margin: 3px;
+  border: 1px solid #ffa800;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+#icon-carousel-nav-dots li .inner-circle {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  margin: 2px auto;
+}
+
+
+
+
+
+
+/* mobile team carousel */
+
+.team-carousel {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .team-carousel {
+    display: block;
+  }
+  .team-card-row {
+    display: none;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+#teamCarousel {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  margin-top: 40px;
+  overflow: hidden;
+  text-align: center;
+}
+#teamCarousel  div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#teamCarousel div img {
+  width: auto;
+  height: 200px;
+  transition: width 1s;
+}
+@media (max-width: 515px) {
+  #teamCarousel div img {
+    width: auto;
+    height: 150px;
+    transition: width 1s;
+  }
+}
+@media (max-width: 400px) {
+  #teamCarousel div img {
+    width: auto;
+    height: 125px;
+    transition: width 1s;
+  }
+}
+#teamCarousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#teamCarousel div.hideLeft img {
+  width: 100px;
+}
+#teamCarousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#teamCarousel div.hideRight img {
+  /* width: 100px; */
+}
+#teamCarousel div.prev {
+  z-index: 5;
+  left: 15%;
+  transform: translateY(50px) translateX(-50%);
+  opacity: 0.7;
+}
+#teamCarousel div.prev img {
+  /* width: 200px; */
+}
+#teamCarousel div.prevLeftSecond {
+  z-index: 4;
+  left: 0%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0;
+}
+#teamCarousel div.prevLeftSecond img {
+  /* width: 10px; */
+}
+#teamCarousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#teamCarousel div.next {
+  z-index: 5;
+  left: 85%;
+  transform: translateY(50px) translateX(-50%);
+  opacity: 0.7;
+}
+#teamCarousel div.next img {
+  /* width: 200px; */
+}
+#teamCarousel div.nextRightSecond {
+  z-index: 4;
+  left: 100%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0;
+}
+#teamCarousel div.nextRightSecond img {
+  /* width: 50px; */
+}
+
+.buttons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
+#team-carousel-nav-dots {
+  display: block;
+  width: 100px;
+  margin: -100px auto 0 auto;
+  padding: 0;
+}
+
+#team-carousel-nav-dots li {
+  display: inline-flex;
+  margin: 3px;
+  border: 1px solid #7e1fff;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+#team-carousel-nav-dots li .inner-circle {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  margin: 2px auto;
 }

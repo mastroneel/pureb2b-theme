@@ -20,6 +20,7 @@
   <body <?php body_class( $pureb2b_classes ); ?>>
     <div class="main-navbar-menus">
       <?php wp_nav_menu(array('theme_location' => 'homelogomenu')); ?>
+      <?php wp_nav_menu(array('theme_location' => 'mobilehomelogomenu')); ?>
       <?php wp_nav_menu(array('theme_location' => 'navbar')); ?>
       <?php wp_nav_menu(array('theme_location' => 'mobilenavbar')); ?>
     </div>
