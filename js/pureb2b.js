@@ -10410,15 +10410,7 @@ $(".get-to-know-us-menus-container").mouseleave(function() {
 
 
 
-
-
-
-
-
-
-
-
-// mobile icons carousel
+// mobile carousels
 
 function moveToSelected(element) {
 
@@ -10435,218 +10427,33 @@ function moveToSelected(element) {
   var prevSecond = $(prev).prev();
   var nextSecond = $(next).next();
 
-  $(selected).removeClass().addClass("selected").trigger("navDotSet");
+  $(selected).removeClass().addClass("selected").myPlugin();
 
-  $(prev).removeClass().addClass("prev").trigger("navDotSet");
-  $(next).removeClass().addClass("next").trigger("navDotSet");
+  $(prev).removeClass().addClass("prev").myPlugin();
+  $(next).removeClass().addClass("next").myPlugin();
 
-  $(nextSecond).removeClass().addClass("nextRightSecond").trigger("navDotSet");
-  $(prevSecond).removeClass().addClass("prevLeftSecond").trigger("navDotSet");
+  $(nextSecond).removeClass().addClass("nextRightSecond").myPlugin();
+  $(prevSecond).removeClass().addClass("prevLeftSecond").myPlugin();
 
-  $(nextSecond).nextAll().removeClass().addClass('hideRight').trigger("navDotSet");
-  $(prevSecond).prevAll().removeClass().addClass('hideLeft').trigger("navDotSet");
+  $(nextSecond).nextAll().removeClass().addClass('hideRight').myPlugin();
+  $(prevSecond).prevAll().removeClass().addClass('hideLeft').myPlugin();
 
 }
 
-// Eventos teclado
-// $(document).keydown(function(e) {
-//     switch(e.which) {
-//         case 37: // left
-//         moveToSelected('prev');
-//         break;
-//
-//         case 39: // right
-//         moveToSelected('next');
-//         break;
-//
-//         default: return;
-//     }
-//     e.preventDefault();
-// });
-
+// icons carousel
 $('#iconsCarousel div').click(function() {
-  moveToSelected($(this)).trigger("navDotSet");
+  moveToSelected($(this)).myPlugin();
 });
 
-// $('#prev').click(function() {
-//   moveToSelected('prev').trigger("navDotSet");
-// });
-//
-// $('#next').click(function() {
-//   moveToSelected('next').trigger("navDotSet");
-// });
-
-
-
-// $('.selected')(function() {
-//   $(".inner-circle-1").css('background', '#ffa800');
-// });
-//
-//
-// $( ".icon-1" ).hasClass("selected", function() {
-//   $(".inner-circle-1").css('background', '#ffa800');
-// });
-//
-// if ($('.icon-1').hasClass('selected')) {
-//   $('.inner-circle-1').css('background', '#ffa800');
-// }
-//
-//
-// if ($( '.icon-1' ).parent().hasClass('.selected')) {
-//   $('.inner-circle-1').css('background', '#ffa800');
-//   // $('body').css('background', '#ffa800');
-// }
-
-// if ($('.selected').children('.icon-1')) {
-//   $('.inner-circle-1').css('background', '#ffa800');
-//   $('.inner-circle-2').css('background', 'transparent');
-//   $('.inner-circle-3').css('background', 'transparent');
-//   $('.inner-circle-4').css('background', 'transparent');
-//   $('.inner-circle-5').css('background', 'transparent');
-//   $('.inner-circle-6').css('background', 'transparent');
-// }
-
-if ($( '.icon-4' ).parent().hasClass('selected')) {
-  $('.inner-circle-4').css('background', '#ffa800');
-  $('.inner-circle-2').css('background', 'transparent');
-  $('.inner-circle-3').css('background', 'transparent');
-  $('.inner-circle-1').css('background', 'transparent');
-  $('.inner-circle-5').css('background', 'transparent');
-  $('.inner-circle-6').css('background', 'transparent');
-}
-
-
-$('.icons-carousel').on('navDotSet', function () {
-
-if ($( '.icon-1' ).parent().hasClass('selected')) {
-  $('.inner-circle-1').css('background', '#ffa800');
-  $('.inner-circle-2').css('background', 'transparent');
-  $('.inner-circle-3').css('background', 'transparent');
-  $('.inner-circle-4').css('background', 'transparent');
-  $('.inner-circle-5').css('background', 'transparent');
-  $('.inner-circle-6').css('background', 'transparent');
-}
-
-if ($( '.icon-2' ).parent().hasClass('selected')){
-  $('.inner-circle-2').css('background', '#ffa800');
-  $('.inner-circle-1').css('background', 'transparent');
-  $('.inner-circle-3').css('background', 'transparent');
-  $('.inner-circle-4').css('background', 'transparent');
-  $('.inner-circle-5').css('background', 'transparent');
-  $('.inner-circle-6').css('background', 'transparent');
-}
-
-if ($( '.icon-3' ).parent().hasClass('selected')) {
-  $('.inner-circle-3').css('background', '#ffa800');
-  $('.inner-circle-2').css('background', 'transparent');
-  $('.inner-circle-1').css('background', 'transparent');
-  $('.inner-circle-4').css('background', 'transparent');
-  $('.inner-circle-5').css('background', 'transparent');
-  $('.inner-circle-6').css('background', 'transparent');
-}
-
-if ($( '.icon-4' ).parent().hasClass('selected')) {
-  $('.inner-circle-4').css('background', '#ffa800');
-  $('.inner-circle-2').css('background', 'transparent');
-  $('.inner-circle-3').css('background', 'transparent');
-  $('.inner-circle-1').css('background', 'transparent');
-  $('.inner-circle-5').css('background', 'transparent');
-  $('.inner-circle-6').css('background', 'transparent');
-}
-
-if ($( '.icon-5' ).parent().hasClass('selected')) {
-  $('.inner-circle-5').css('background', '#ffa800');
-  $('.inner-circle-2').css('background', 'transparent');
-  $('.inner-circle-3').css('background', 'transparent');
-  $('.inner-circle-4').css('background', 'transparent');
-  $('.inner-circle-1').css('background', 'transparent');
-  $('.inner-circle-6').css('background', 'transparent');
-}
-
-if ($( '.icon-6' ).parent().hasClass('selected')) {
-  $('.inner-circle-6').css('background', '#ffa800');
-  $('.inner-circle-2').css('background', 'transparent');
-  $('.inner-circle-3').css('background', 'transparent');
-  $('.inner-circle-4').css('background', 'transparent');
-  $('.inner-circle-5').css('background', 'transparent');
-  $('.inner-circle-1').css('background', 'transparent');
-}
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// mobile team carousel
-
-function moveToSelected(element) {
-
-  if (element == "next") {
-    var selected = $(".selected").next();
-  } else if (element == "prev") {
-    var selected = $(".selected").prev();
-  } else {
-    var selected = element;
-  }
-
-  var next = $(selected).next();
-  var prev = $(selected).prev();
-  var prevSecond = $(prev).prev();
-  var nextSecond = $(next).next();
-
-  $(selected).removeClass().addClass("selected").trigger("navDotSet2");
-
-  $(prev).removeClass().addClass("prev").trigger("navDotSet2");
-  $(next).removeClass().addClass("next").trigger("navDotSet2");
-
-  $(nextSecond).removeClass().addClass("nextRightSecond").trigger("navDotSet2");
-  $(prevSecond).removeClass().addClass("prevLeftSecond").trigger("navDotSet2");
-
-  $(nextSecond).nextAll().removeClass().addClass('hideRight').trigger("navDotSet2");
-  $(prevSecond).prevAll().removeClass().addClass('hideLeft').trigger("navDotSet2");
-
-}
-
-// Eventos teclado
-// $(document).keydown(function(e) {
-//     switch(e.which) {
-//         case 37: // left
-//         moveToSelected('prev');
-//         break;
-//
-//         case 39: // right
-//         moveToSelected('next');
-//         break;
-//
-//         default: return;
-//     }
-//     e.preventDefault();
-// });
-
+// team carousel
 $('#teamCarousel div').click(function() {
-  moveToSelected($(this)).trigger("navDotSet2");
+  moveToSelected($(this)).myPlugin();
 });
 
-// $('#prev').click(function() {
-//   moveToSelected('prev').trigger("navDotSet2");
-// });
-//
-// $('#next').click(function() {
-//   moveToSelected('next').trigger("navDotSet2");
-// });
+// client carousel
+$('#clientCarousel div').click(function() {
+  moveToSelected($(this)).myPlugin();
+});
 
 
 if ($( '.team-carousel-2' ).parent().hasClass('selected')) {
@@ -10656,35 +10463,99 @@ if ($( '.team-carousel-2' ).parent().hasClass('selected')) {
   $('.team-inner-circle-1').css('background', 'transparent');
 }
 
-
-$('.team-carousel').on('navDotSet2', function () {
-
-if ($( '.team-carousel-1' ).parent().hasClass('selected')) {
-  $('.team-inner-circle-1').css('background', '#7e1fff');
-  $('.team-inner-circle-2').css('background', 'transparent');
-  $('.team-inner-circle-3').css('background', 'transparent');
-  $('.team-inner-circle-4').css('background', 'transparent');
+if ($( '.icon-4' ).parent().hasClass('selected')) {
+  $('.inner-circle-4').css('background', '#ffa800');
+  $('.inner-circle-2').css('background', 'transparent');
+  $('.inner-circle-3').css('background', 'transparent');
+  $('.inner-circle-1').css('background', 'transparent');
+  $('.inner-circle-5').css('background', 'transparent');
+  $('.inner-circle-6').css('background', 'transparent');
 }
 
-if ($( '.team-carousel-2' ).parent().hasClass('selected')){
-  $('.team-inner-circle-2').css('background', '#7e1fff');
-  $('.team-inner-circle-1').css('background', 'transparent');
-  $('.team-inner-circle-3').css('background', 'transparent');
-  $('.team-inner-circle-4').css('background', 'transparent');
-}
+(function($) {
+    $.fn.myPlugin = function() {
+        return this.each(function() {
+          if ($( '.team-carousel-1' ).parent().hasClass('selected')) {
+            $('.team-inner-circle-1').css('background', '#7e1fff');
+            $('.team-inner-circle-2').css('background', 'transparent');
+            $('.team-inner-circle-3').css('background', 'transparent');
+            $('.team-inner-circle-4').css('background', 'transparent');
+          }
 
-if ($( '.team-carousel-3' ).parent().hasClass('selected')) {
-  $('.team-inner-circle-3').css('background', '#7e1fff');
-  $('.team-inner-circle-2').css('background', 'transparent');
-  $('.team-inner-circle-1').css('background', 'transparent');
-  $('.team-inner-circle-4').css('background', 'transparent');
-}
+          if ($( '.team-carousel-2' ).parent().hasClass('selected')){
+            $('.team-inner-circle-2').css('background', '#7e1fff');
+            $('.team-inner-circle-1').css('background', 'transparent');
+            $('.team-inner-circle-3').css('background', 'transparent');
+            $('.team-inner-circle-4').css('background', 'transparent');
+          }
 
-if ($( '.team-carousel-4' ).parent().hasClass('selected')) {
-  $('.team-inner-circle-4').css('background', '#7e1fff');
-  $('.team-inner-circle-2').css('background', 'transparent');
-  $('.team-inner-circle-3').css('background', 'transparent');
-  $('.team-inner-circle-1').css('background', 'transparent');
-}
+          if ($( '.team-carousel-3' ).parent().hasClass('selected')) {
+            $('.team-inner-circle-3').css('background', '#7e1fff');
+            $('.team-inner-circle-2').css('background', 'transparent');
+            $('.team-inner-circle-1').css('background', 'transparent');
+            $('.team-inner-circle-4').css('background', 'transparent');
+          }
 
-});
+          if ($( '.team-carousel-4' ).parent().hasClass('selected')) {
+            $('.team-inner-circle-4').css('background', '#7e1fff');
+            $('.team-inner-circle-2').css('background', 'transparent');
+            $('.team-inner-circle-3').css('background', 'transparent');
+            $('.team-inner-circle-1').css('background', 'transparent');
+          }
+
+          if ($( '.icon-1' ).parent().hasClass('selected')) {
+            $('.inner-circle-1').css('background', '#ffa800');
+            $('.inner-circle-2').css('background', 'transparent');
+            $('.inner-circle-3').css('background', 'transparent');
+            $('.inner-circle-4').css('background', 'transparent');
+            $('.inner-circle-5').css('background', 'transparent');
+            $('.inner-circle-6').css('background', 'transparent');
+          }
+
+          if ($( '.icon-2' ).parent().hasClass('selected')){
+            $('.inner-circle-2').css('background', '#ffa800');
+            $('.inner-circle-1').css('background', 'transparent');
+            $('.inner-circle-3').css('background', 'transparent');
+            $('.inner-circle-4').css('background', 'transparent');
+            $('.inner-circle-5').css('background', 'transparent');
+            $('.inner-circle-6').css('background', 'transparent');
+          }
+
+          if ($( '.icon-3' ).parent().hasClass('selected')) {
+            $('.inner-circle-3').css('background', '#ffa800');
+            $('.inner-circle-2').css('background', 'transparent');
+            $('.inner-circle-1').css('background', 'transparent');
+            $('.inner-circle-4').css('background', 'transparent');
+            $('.inner-circle-5').css('background', 'transparent');
+            $('.inner-circle-6').css('background', 'transparent');
+          }
+
+          if ($( '.icon-4' ).parent().hasClass('selected')) {
+            $('.inner-circle-4').css('background', '#ffa800');
+            $('.inner-circle-2').css('background', 'transparent');
+            $('.inner-circle-3').css('background', 'transparent');
+            $('.inner-circle-1').css('background', 'transparent');
+            $('.inner-circle-5').css('background', 'transparent');
+            $('.inner-circle-6').css('background', 'transparent');
+          }
+
+          if ($( '.icon-5' ).parent().hasClass('selected')) {
+            $('.inner-circle-5').css('background', '#ffa800');
+            $('.inner-circle-2').css('background', 'transparent');
+            $('.inner-circle-3').css('background', 'transparent');
+            $('.inner-circle-4').css('background', 'transparent');
+            $('.inner-circle-1').css('background', 'transparent');
+            $('.inner-circle-6').css('background', 'transparent');
+          }
+
+          if ($( '.icon-6' ).parent().hasClass('selected')) {
+            $('.inner-circle-6').css('background', '#ffa800');
+            $('.inner-circle-2').css('background', 'transparent');
+            $('.inner-circle-3').css('background', 'transparent');
+            $('.inner-circle-4').css('background', 'transparent');
+            $('.inner-circle-5').css('background', 'transparent');
+            $('.inner-circle-1').css('background', 'transparent');
+          }
+        });
+    };
+}(jQuery));
