@@ -511,8 +511,8 @@ a {
   top: 0;
   width: 100%;
   background: #008fff;
-  height: 100px;
-  line-height: 100px;
+  height: 70px;
+  line-height: 40px;
   z-index: 100;
 }
 .menu-home-logo-menu-container {
@@ -522,7 +522,7 @@ a {
 
 .menu-home-logo-menu-container img {
   height: 40px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .menu-navbar-container {
@@ -1238,6 +1238,9 @@ a {
 
 
 
+
+
+
 /* info rows */
 
 .home .info-row {
@@ -1251,6 +1254,8 @@ a {
   max-width: 700px;
   margin: 10px auto 0 auto;
 }
+
+
 
 @media (max-width: 1250px) {
   .home .info-row img {
@@ -1454,6 +1459,7 @@ a {
 
 .home .icons-row img {
   width: 120px;
+  height: 110px;
 }
 
 
@@ -2167,4 +2173,502 @@ main {
 }
 #clientCarousel div.nextRightSecond img {
   /* width: 50px; */
+}
+
+
+/* homepage media queries for larger screens */
+@media (min-width: 1561px) and (min-height: 900px) {
+  .hero h4 {
+    font-size: 40px;
+    max-width: 1100px;
+  }
+  .hero p {
+    font-size: 25px;
+    margin-top: 70px;
+    max-width: 1100px;
+  }
+  .home .info-row {
+    padding: 0 100px;
+  }
+  .home .info-row-1 {
+    margin-top: -150px !important;
+  }
+  .home .info-row img {
+    margin-top: 60px !important;
+  }
+  .white-box {
+    max-width: 500px;
+    padding: 20px 50px 50px 50px;
+  }
+  .home .info-row p.gray {
+    font-size: 20px;
+  }
+  .home .info-row .white-box .orange-button {
+    font-size: 18px;
+  }
+  .funnel-section {
+    min-height: 90vh;
+    margin-top: -500px;
+  }
+  .funnel-section h2.white,
+  .home h2.blue {
+    font-size: 45px;
+  }
+  .funnel-section h3.white {
+    font-size: 25px;
+  }
+  .funnel-section .white-box-no-shadow {
+    max-width: 400px;
+  }
+  .funnel-section .white-box-row {
+    padding: 0 250px;
+  }
+  .home .map {
+    width: 70%;
+  }
+  .home .icons-row {
+    padding: 0 200px;
+  }
+  .icons-row p.gray {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1761px) and (min-height: 1000px) {
+  .hero h2 {
+    font-size: 70px;
+  }
+  .hero h4 {
+    font-size: 45px;
+    max-width: 1300px;
+  }
+  .hero p {
+    font-size: 30px;
+    margin-top: 80px;
+    max-width: 1300px;
+  }
+  .home .info-row {
+    padding: 0 150px;
+  }
+  .home .info-row.info-row-1 {
+    margin-top: -200px !important;
+  }
+  .home .info-row img {
+    margin-top: 80px !important;
+  }
+  .white-box {
+    max-width: 550px;
+    padding: 30px 60px 60px 60px;
+  }
+  .home .info-row h3.blue {
+    font-size: 45px;
+  }
+  .home .info-row h4 {
+    font-size: 25px;
+  }
+  .home .info-row p.gray {
+    font-size: 22px;
+  }
+  .home .info-row .white-box .orange-button {
+    font-size: 22px;
+    padding: 15px 50px;
+  }
+  .funnel-section {
+    min-height: 85vh;
+    margin-top: -500px;
+  }
+  .funnel-section h2.white,
+  .home h2.blue {
+    font-size: 50px;
+  }
+  .funnel-section h3.white {
+    font-size: 28px;
+  }
+  .funnel-section .white-box-no-shadow {
+    max-width: 500px;
+  }
+  .funnel-section .white-box-no-shadow h3 {
+    font-size: 30px;
+  }
+  .funnel-section .white-box-no-shadow .blue-button,
+  .funnel-section .white-box-no-shadow .orange-button,
+  .funnel-section .white-box-no-shadow .purple-button {
+    font-size: 18px;
+    /* padding: 15px 50px; */
+  }
+  .funnel-section .white-box-no-shadow img {
+    height: 150px;
+    margin-bottom: 40px;
+  }
+  .funnel-section .white-box-row {
+    padding: 0 250px;
+  }
+  .home .map {
+    width: 70%;
+  }
+  .home .icons-row {
+    padding: 0 200px;
+  }
+  .icons-row p.gray {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .hero h2 {
+    font-size: 75px;
+  }
+  .hero h4 {
+    font-size: 50px;
+    max-width: 1500px;
+  }
+  .hero p {
+    font-size: 35px;
+    margin-top: 80px;
+    max-width: 1500px;
+  }
+  .home .info-row {
+    padding: 0 200px;
+  }
+  .home .info-row.info-row-1 {
+    margin-top: -200px !important;
+  }
+  .home .info-row img {
+    margin-top: 80px !important;
+  }
+  .white-box {
+    max-width: 550px;
+    padding: 30px 60px 60px 60px;
+  }
+  .home .info-row h3.blue {
+    font-size: 45px;
+  }
+  .home .info-row h4 {
+    font-size: 25px;
+  }
+  .home .info-row p.gray {
+    font-size: 22px;
+  }
+  .home .info-row .white-box .orange-button {
+    font-size: 22px;
+    padding: 15px 50px;
+  }
+  .funnel-section {
+    min-height: 85vh;
+    margin-top: -500px;
+  }
+  .funnel-section h2.white,
+  .home h2.blue {
+    font-size: 55px;
+  }
+  .funnel-section h3.white {
+    font-size: 32px;
+  }
+  .funnel-section .white-box-no-shadow {
+    max-width: 550px;
+  }
+  .funnel-section .white-box-no-shadow h3 {
+    font-size: 35px;
+  }
+  .funnel-section .white-box-no-shadow .blue-button,
+  .funnel-section .white-box-no-shadow .orange-button,
+  .funnel-section .white-box-no-shadow .purple-button {
+    font-size: 18px;
+    /* padding: 15px 50px; */
+  }
+  .funnel-section .white-box-no-shadow img {
+    height: 150px;
+    margin-bottom: 40px;
+  }
+  .funnel-section .white-box-row {
+    padding: 0 250px;
+  }
+  .home .map {
+    width: 70%;
+  }
+  .home .icons-row {
+    padding: 0 200px;
+  }
+  .icons-row p.gray {
+    font-size: 22px;
+  }
+}
+
+
+
+@media (min-width: 2100px) and (min-height: 1100px) {
+  .hero h2 {
+    font-size: 75px;
+  }
+  .hero h4 {
+    font-size: 50px;
+    max-width: 1500px;
+  }
+  .hero p {
+    font-size: 35px;
+    margin-top: 80px;
+    max-width: 1500px;
+  }
+  .home .info-row {
+    padding: 0 200px;
+  }
+  .home .info-row.info-row-1 {
+    margin-top: -200px !important;
+  }
+  .home .info-row img {
+    margin-top: 80px !important;
+  }
+  .white-box {
+    max-width: 600px;
+    padding: 40px 70px 70px 70px;
+  }
+  .home .info-row h3.blue {
+    font-size: 48px;
+  }
+  .home .info-row h4 {
+    font-size: 28px;
+  }
+  .home .info-row p.gray {
+    font-size: 25px;
+  }
+  .home .info-row .white-box .orange-button {
+    font-size: 22px;
+    padding: 15px 50px;
+  }
+  .funnel-section {
+    min-height: 85vh;
+    margin-top: -500px;
+  }
+  .funnel-section h2.white,
+  .home h2.blue {
+    font-size: 60px;
+  }
+  .funnel-section h3.white {
+    font-size: 35px;
+  }
+  .funnel-section .white-box-no-shadow {
+    max-width: 550px;
+  }
+  .funnel-section .white-box-no-shadow h3 {
+    font-size: 38px;
+  }
+  .funnel-section .white-box-no-shadow .blue-button,
+  .funnel-section .white-box-no-shadow .orange-button,
+  .funnel-section .white-box-no-shadow .purple-button {
+    font-size: 20px;
+    /* padding: 15px 50px; */
+  }
+  .funnel-section .white-box-no-shadow img {
+    height: 160px;
+    margin-bottom: 40px;
+  }
+  .funnel-section .white-box-row {
+    padding: 0 250px;
+  }
+  .home .map {
+    width: 70%;
+  }
+  .home .icons-row {
+    padding: 0 200px;
+  }
+  .icons-row p.gray {
+    font-size: 25px;
+  }
+}
+
+
+@media (min-width: 2300px) and (min-height: 1200px) {
+  .hero h2 {
+    font-size: 80px;
+  }
+  .hero h4 {
+    font-size: 55px;
+    max-width: 1800px;
+  }
+  .hero p {
+    font-size: 40px;
+    margin-top: 90px;
+    max-width: 1800px;
+  }
+  .home .info-row {
+    padding: 0 300px;
+  }
+  .home .desktop-info-rows {
+    margin-top: -600px !important;
+  }
+  .home .info-row img {
+    margin-top: 100px !important;
+    max-width: 900px;
+  }
+  .white-box {
+    max-width: 600px;
+    padding: 40px 70px 70px 70px;
+  }
+  .home .info-row h3.blue {
+    font-size: 48px;
+  }
+  .home .info-row h4 {
+    font-size: 28px;
+  }
+  .home .info-row p.gray {
+    font-size: 25px;
+  }
+  .home .info-row .white-box .orange-button {
+    font-size: 22px;
+    padding: 15px 50px;
+  }
+  .funnel-section {
+    min-height: 85vh;
+    margin-top: -500px;
+  }
+  .funnel-section h2.white,
+  .home h2.blue {
+    font-size: 65px;
+  }
+  .funnel-section h3.white {
+    font-size: 40px;
+  }
+  .funnel-section .white-box-no-shadow {
+    max-width: 600px;
+  }
+  .funnel-section .white-box-no-shadow h3 {
+    font-size: 45px;
+  }
+  .funnel-section .white-box-no-shadow .blue-button,
+  .funnel-section .white-box-no-shadow .orange-button,
+  .funnel-section .white-box-no-shadow .purple-button {
+    font-size: 24px;
+    padding: 15px 50px;
+  }
+  .funnel-section .white-box-no-shadow img {
+    height: 180px;
+    margin-bottom: 60px;
+  }
+  .funnel-section .white-box-row {
+    padding: 0 300px;
+  }
+  .home .map {
+    width: 70%;
+  }
+  .home .icons-row {
+    padding: 0 400px;
+  }
+  .icons-row p.gray {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 2500px) and (min-height: 1300px) {
+  .hero h2 {
+    font-size: 85px;
+  }
+  .hero h4 {
+    font-size: 60px;
+    max-width: 2000px;
+  }
+  .hero p {
+    font-size: 45px;
+    margin-top: 90px;
+    max-width: 2000px;
+  }
+  .home .info-row {
+    padding: 0 300px;
+  }
+  .home .desktop-info-rows {
+    margin-top: -700px !important;
+  }
+  .home .info-row img {
+    margin-top: 100px !important;
+    max-width: 1100px;
+  }
+  .white-box {
+    max-width: 750px;
+    padding: 50px 80px 80px 80px;
+  }
+  .home .info-row h3.blue {
+    font-size: 52px;
+  }
+  .home .info-row h4 {
+    font-size: 32px;
+  }
+  .home .info-row p.gray {
+    font-size: 30px;
+  }
+  .home .info-row .white-box .orange-button {
+    font-size: 25px;
+    padding: 20px 60px;
+  }
+  .funnel-section {
+    min-height: 85vh;
+    margin-top: -500px;
+  }
+  .funnel-section h2.white,
+  .home h2.blue {
+    font-size: 70px;
+  }
+  .funnel-section h3.white {
+    font-size: 45px;
+  }
+  .funnel-section .white-box-no-shadow {
+    max-width: 600px;
+  }
+  .funnel-section .white-box-no-shadow h3 {
+    font-size: 45px;
+  }
+  .funnel-section .white-box-no-shadow .blue-button,
+  .funnel-section .white-box-no-shadow .orange-button,
+  .funnel-section .white-box-no-shadow .purple-button {
+    font-size: 24px;
+    padding: 15px 50px;
+  }
+  .funnel-section .white-box-no-shadow img {
+    height: 180px;
+    margin-bottom: 60px;
+  }
+  .funnel-section .white-box-row {
+    padding: 0 400px;
+  }
+  .home .map {
+    width: 70%;
+  }
+  .home .icons-row {
+    padding: 0 400px;
+  }
+  .icons-row p.gray {
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+/* ************************** */
+/* Lead solutions page styles */
+/* ************************** */
+
+.lead-hero {
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: -100px;
+  background-image: url('../images/lead-gen-solutions-page/lead-gen-hero-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+}
+
+.lead-hero h2, h1 {
+  color: #fff;
+}
+
+.lead-hero h2 {
+  font-size: 60px;
+  font-family: 'Gotham Light';
+}
+
+.lead-hero h1 {
+  font-size: 70px;
+  font-family: 'Gotham Bold';
+  margin-top: -20px;
 }
