@@ -10559,3 +10559,24 @@ if ($( '.icon-4' ).parent().hasClass('selected')) {
         });
     };
 }(jQuery));
+
+
+
+
+
+(function() {
+
+  var quotes = $(".quotes");
+  var quoteIndex = -1;
+
+  function showNextQuote() {
+    ++quoteIndex;
+    quotes.eq(quoteIndex % quotes.length)
+      .fadeIn(500)
+      .delay(3000)
+      .fadeOut(500, showNextQuote);
+  }
+
+  showNextQuote();
+
+})();
