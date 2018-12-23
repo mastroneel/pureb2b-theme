@@ -6,17 +6,17 @@
         <?php wp_nav_menu(array('theme_location' => 'footerlogomenu')); ?>
       </div>
       <div class="col-xs-12 col-md-2">
-        <p>Get to Know Us</p>
+        <!-- <p>Get to Know Us</p> -->
         <?php wp_nav_menu(array('theme_location' => 'gettoknowmenu')); ?>
       </div>
       <div class="col-xs-12 col-md-2">
-        <p>Top of Funnel Lead Gen</p>
+        <!-- <p>Top of Funnel Lead Gen</p> -->
         <?php wp_nav_menu(array('theme_location' => 'topoffunnelmenu')); ?>
       </div>
       <div class="col-xs-12 col-md-2">
-        <p>Bottom of Funnel Lead Gen</p>
+        <!-- <p>Bottom of Funnel Lead Gen</p> -->
         <?php wp_nav_menu(array('theme_location' => 'bottomoffunnelmenu')); ?>
-        <p>Lead Research</p>
+        <!-- <p>Lead Research</p> -->
         <?php wp_nav_menu(array('theme_location' => 'leadresearchmenu')); ?>
       </div>
       <div class="col-xs-12 col-md-2">
