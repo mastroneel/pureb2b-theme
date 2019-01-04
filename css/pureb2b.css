@@ -231,6 +231,13 @@ p {
   background: #fff;
 }
 
+#menu-about-header-menu,
+#menu-meet-the-team-header-menu,
+#menu-lead-gen-header-menu {
+  padding: 0;
+  margin: 0;
+}
+
 .arrow-up-1 {
   position: absolute;
   right: 680px;
@@ -572,7 +579,7 @@ p {
   top: 0;
   width: 100%;
   /* background: #008fff; */
-  height: 70px;
+  height: 55px;
   line-height: 40px;
   z-index: 100;
 }
@@ -1126,7 +1133,8 @@ h1.quotes {
 /* funnel section */
 
 .funnel-section {
-  min-height: 120vh;
+  height: 110vh;
+  max-height: 800px;
   background-image: url('../images/homepage/lower-home-bg.png');
   position: relative;
   z-index: 1;
@@ -1134,7 +1142,20 @@ h1.quotes {
   background-repeat: no-repeat;
   background-position: center bottom;
   margin-top: -400px;
-  padding-top: 600px;
+  padding-top: 500px;
+}
+
+@media (max-width: 1200px) {
+  .funnel-section {
+    max-height: 700px;
+  }
+}
+
+@media (max-width: 992px) {
+  .funnel-section {
+    height: auto;
+    max-height: none !important;
+  }
 }
 
 .funnel-section h1,
@@ -1205,6 +1226,7 @@ h1.quotes {
   .funnel-section {
     padding-bottom: 200px;
     margin-top: -500px;
+    padding-top: 600px;
   }
   .funnel-section .white-box-no-shadow {
     min-height: 290px;
@@ -1220,6 +1242,12 @@ h1.quotes {
 @media (max-width: 500px) {
   .funnel-section {
     margin-top: -500px;
+  }
+}
+
+@media (max-width: 400px) {
+  .funnel-section h1 {
+    padding-top: 100px;
   }
 }
 
@@ -2186,8 +2214,10 @@ main {
     font-size: 18px;
   }
   .funnel-section {
-    min-height: 90vh;
+    height: 90vh;
+    max-height: 750px;
     margin-top: -500px;
+    padding-top: 550px;
   }
   .funnel-section h1,
   .home h1.blue {
@@ -2345,8 +2375,9 @@ main {
     padding: 15px 50px;
   }
   .funnel-section {
-    min-height: 95vh;
+    height: 95vh;
     margin-top: -500px;
+    max-height: 950px;
   }
   .funnel-section h1 {
     padding-top: 50px;
@@ -4115,6 +4146,7 @@ main {
 .top-of-funnel-hero {
   height: 130vh;
   min-height: 680px;
+  max-height: 850px;
   width: 100vw;
   background-image: url('../images/top-of-funnel-page/top-hero-bg.png');
   background-size: cover;
@@ -4291,6 +4323,28 @@ main {
   transition: 0.2s;
 }
 
+.page-id-279 .box-row .box {
+  min-height: 420px;
+}
+
+@media (max-width: 960px) {
+  .page-id-279 .box-row .box {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-id-279 .box-row .box {
+    min-height: 390px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 850px) {
+  .page-id-279 .box-row .box {
+    min-height: 460px;
+  }
+}
+
 .box-row .box h2 {
   margin-top: 0px;
   font-size: 30px;
@@ -4359,6 +4413,7 @@ main {
 @media (min-width: 1561px) and (min-height: 900px) {
   .top-of-funnel-hero {
     height: 110vh;
+    max-height: 800px;
   }
   .top-of-funnel-hero h1.light {
     font-size: 40px;
@@ -4369,6 +4424,9 @@ main {
 }
 
 @media (min-width: 1761px) and (min-height: 1000px) {
+  .top-of-funnel-hero {
+    max-height: 1000px;
+  }
   .top-of-funnel-hero h1.light {
     font-size: 60px;
   }
@@ -4387,6 +4445,12 @@ main {
   .desktop-info-box p {
     font-size: 25px;
   }
+  .page-id-279 .box-row .box {
+    min-height: 450px;
+  }
+  .page-id-279 .box-row .box {
+    min-height: 580px;
+  }
   .box-row .box h2 {
     font-size: 40px;
   }
@@ -4400,6 +4464,9 @@ main {
 
 
 @media (min-width: 1920px) and (min-height: 1080px) {
+  .top-of-funnel-hero {
+    max-height: 1100px;
+  }
   .top-of-funnel-hero h1.light {
     font-size: 65px;
   }
@@ -4407,7 +4474,7 @@ main {
     font-size: 75px;
   }
   .desktop-info-box {
-    margin-top: -600px;
+    margin-top: -660px;
   }
   .desktop-info-box h2 {
     font-size: 45px;
@@ -4417,6 +4484,9 @@ main {
   }
   .desktop-info-box p {
     font-size: 30px;
+  }
+  .page-id-279 .box-row .box {
+    min-height: 680px;
   }
   .box-row .box h2 {
     font-size: 45px;
@@ -4430,7 +4500,19 @@ main {
 }
 
 
+@media (min-width: 2100px) and (min-height: 1100px) {
+  .top-of-funnel-hero {
+    max-height: 1200px;
+  }
+  .desktop-info-box {
+    margin-top: -750px;
+  }
+}
+
 @media (min-width: 2300px) and (min-height: 1200px) {
+  .top-of-funnel-hero {
+    max-height: 1400px;
+  }
   .top-of-funnel-hero h1.light {
     font-size: 70px;
   }
@@ -4438,7 +4520,7 @@ main {
     font-size: 80px;
   }
   .desktop-info-box {
-    margin-top: -800px;
+    margin-top: -850px;
   }
   .desktop-info-box h2 {
     font-size: 50px;
@@ -4448,6 +4530,9 @@ main {
   }
   .desktop-info-box p {
     font-size: 35px;
+  }
+  .page-id-279 .box-row .box {
+    min-height: 800px;
   }
   .box-row .box h2 {
     font-size: 50px;
@@ -4461,6 +4546,9 @@ main {
 }
 
 @media (min-width: 2500px) and (min-height: 1300px) {
+  .top-of-funnel-hero {
+    max-height: 1500px;
+  }
   .top-of-funnel-hero h1.light {
     font-size: 75px;
   }
@@ -4468,7 +4556,7 @@ main {
     font-size: 85px;
   }
   .desktop-info-box {
-    margin-top: -850px;
+    margin-top: -900px;
   }
   .desktop-info-box h2 {
     font-size: 55px;
@@ -4478,6 +4566,9 @@ main {
   }
   .desktop-info-box p {
     font-size: 40px;
+  }
+  .page-id-279 .box-row .box {
+    min-height: 900px;
   }
   .box-row .box h2 {
     font-size: 55px;
