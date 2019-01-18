@@ -10390,7 +10390,7 @@ $(".lead-solutions-menus-container").mouseleave(function() {
   $(".lead-solutions-menus-container").css('top', '-9999999px');
 });
 
-$("#menu-item-26").hover(function() {
+$("#menu-item-666").hover(function() {
   $(".get-to-know-us-menus-container").css('position', 'fixed');
   $(".get-to-know-us-menus-container").css('opacity', '1');
   $(".get-to-know-us-menus-container").css('top', '-30px');
@@ -10580,3 +10580,113 @@ if ($( '.icon-4' ).parent().hasClass('selected')) {
   showNextQuote();
 
 })();
+
+
+(function() {
+
+  var quotes = $(".quotes2");
+  var quoteIndex = -1;
+
+  function showNextQuote() {
+    ++quoteIndex;
+    quotes.eq(quoteIndex % quotes.length)
+      .fadeIn(500)
+      .delay(800)
+      .fadeOut(500, showNextQuote);
+  }
+
+  showNextQuote();
+
+})();
+
+
+
+$('.page-id-6 .team-card').click(function() {
+	$('.team-info').removeClass('visible');
+	$('.team-card').removeClass('active');
+});
+
+$('.page-id-6 .team-card-1').click(function() {
+	$('.team-info-1').toggleClass('visible');
+	$('.page-id-6 .team-card-1').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-2').click(function() {
+	$('.team-info-2').toggleClass('visible');
+	$('.page-id-6 .team-card-2').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-3').click(function() {
+	$('.team-info-3').toggleClass('visible');
+	$('.page-id-6 .team-card-3').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-4').click(function() {
+	$('.team-info-4').toggleClass('visible');
+	$('.page-id-6 .team-card-4').toggleClass('active');
+});
+
+$('.team-card-5').click(function() {
+	$('.team-info-5').toggleClass('visible');
+	$('.team-card-5').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-6').click(function() {
+	$('.team-info-6').toggleClass('visible');
+	$('.page-id-6 .team-card-6').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-7').click(function() {
+	$('.team-info-7').toggleClass('visible');
+	$('.page-id-6 .team-card-7').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-8').click(function() {
+	$('.team-info-8').toggleClass('visible');
+	$('.page-id-6 .team-card-8').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-9').click(function() {
+	$('.team-info-9').toggleClass('visible');
+	$('.page-id-6 .team-card-9').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-10').click(function() {
+	$('.team-info-10').toggleClass('visible');
+	$('.page-id-6 .team-card-10').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-11').click(function() {
+	$('.team-info-11').toggleClass('visible');
+	$('.page-id-6 .team-card-11').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-12').click(function() {
+	$('.team-info-12').toggleClass('visible');
+	$('.page-id-6 .team-card-12').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-13').click(function() {
+	$('.team-info-13').toggleClass('visible');
+	$('.page-id-6 .team-card-13').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-14').click(function() {
+	$('.team-info-14').toggleClass('visible');
+	$('.page-id-6 .team-card-14').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-15').click(function() {
+	$('.team-info-15').toggleClass('visible');
+	$('.page-id-6 .team-card-15').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-16').click(function() {
+	$('.team-info-16').toggleClass('visible');
+	$('.page-id-6 .team-card-16').toggleClass('active');
+});
+
+$('.page-id-6 .team-card-17').click(function() {
+	$('.team-info-17').toggleClass('visible');
+	$('.page-id-6 .team-card-17').toggleClass('active');
+});
